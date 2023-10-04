@@ -29,7 +29,7 @@ export class ButtonComponent {
         var value=(diffDays+1)*this.car.car_rental_price
         this.service.createBooking({
           car_model:this.car.car_model_name,
-          no_of_days_booked:diffDays,
+          no_of_days_booked:diffDays+1,
           start_date:start,
           end_date:end,
           car_price :this.car.car_rental_price,

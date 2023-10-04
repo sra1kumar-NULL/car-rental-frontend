@@ -14,7 +14,7 @@ export class CarService {
 
   constructor(private http:HttpClient){
   }
-  private backendUrl='http://localhost:3000/cars'
+  private backendUrl='https://car-rental-backend-service.onrender.com/cars'
 
   getCars():Observable<Response> {
     return this.http.get<Response>(this.backendUrl)
