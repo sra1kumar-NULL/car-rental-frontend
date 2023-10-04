@@ -1,0 +1,19 @@
+.car-table {
+    width: '100%';
+  }
+  .mat-column-car-position {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-right: 24px;
+    text-align: center;
+  }
+  
+  .mat-column-car-model {
+    padding-left: 16px;
+    font-size: 16px;
+  }
+  
+  .mat-column-car-price {
+    font-size: 16px;
+  }
+  
