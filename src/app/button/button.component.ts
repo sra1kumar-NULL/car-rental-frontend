@@ -26,10 +26,11 @@ export class ButtonComponent {
       const {start,end}=result._model.selection
       if(start && end){
         var diffDays:any = Math.floor((end - start) / (1000 * 60 * 60 * 24));
-        var value=(diffDays+1)*this.car.car_rental_price
+        const duration=diffDays+1
+        var value=(duration)*this.car.car_rental_price
         this.service.createBooking({
           car_model:this.car.car_model_name,
-          no_of_days_booked:diffDays+1,
+          no_of_days_booked:duration,
           start_date:start,
           end_date:end,
           car_price :this.car.car_rental_price,
